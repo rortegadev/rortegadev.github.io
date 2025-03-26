@@ -337,6 +337,30 @@ section {
   font-size: 1rem;
 }
 
+/* Estilos para enlaces en el texto */
+.about-text a {
+  color: #db2777;
+  font-weight: 600;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.about-text a:hover {
+  color: #be185d;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 2px;
+}
+
+/* Asegura que el foco del teclado sea visible */
+.about-text a:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 2px #fdf2f8, 0 0 0 4px #db2777;
+  border-radius: 2px;
+}
+
 .social-links {
   display: flex;
   gap: 20px;

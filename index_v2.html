@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Raquel</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles_v2.css">
+</head>
+
+<body>
+  <!-- Navegación -->
+  <nav class="navbar" role="navigation" aria-label="Navegación principal">
+    <div class="container">
+      <div class="logo">Portfolio</div>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation menu">
+        <span></span>
+      </label>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#about">Sobre mi</a></li>
+        <li><a href="#projects">Proyectos</a></li>
+        <li><a href="#experience">Experiencia</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main -->
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1>👋🏻 Hola! Soy <span class="highlight">Raquel</span></h1>
+            <h2>Full Stack Developer</h2>
+            <p>
+              Mi objetivo es crear aplicaciones web que aporten soluciones reales con un diseño limpio y accesible.
+            </p>
+            <!-- Skills -->
+            <div class="skills-badges" aria-label="Mis skills">
+              <span class="skill-badge">
+                <i class="fab fa-laravel" aria-hidden="true"></i> Laravel
+              </span>
+              <span class="skill-badge">
+                <i class="fas fa-bolt" aria-hidden="true"></i> Livewire
+              </span>
+              <span class="skill-badge">
+                  <i class="fas fa-mountain" aria-hidden="true"></i> AlpineJS
+              </span>
+              <span class="skill-badge">
+                  <i class="fas fa-wind" aria-hidden="true"></i> TailwindCSS
+              </span>
+            </div>
+
+            <div class="hero-buttons">
+              <a href="#contact" class="btn btn-primary">Contactar</a>
+              <a href="#projects" class="btn btn-secondary">Proyectos</a>
+            </div>
+          </div>
+          <div class="hero-image">
+            <div class="profile-image">
+              <img src="resources/img/portrait.webp" alt="Retrato">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="about-heading">Sobre mi</h2>
+          <div class="underline" aria-hidden="true"></div>
+        </div>
+        <div class="about-content">
+          <div class="about-text">
+            <blockquote class="about-quote">
+              <p>"The beautiful thing about learning is that nobody can take it away from you. The journey of growth
+                never ends; each challenge is an opportunity to become better than you were yesterday."</p>
+              <cite>— B.B. King</cite>
+            </blockquote>
+
+            <h3>Trayectoria</h3>
+            <p>
+              Soy desarrolladora full stack con especial interés en el ámbito frontend y la accesibilidad web. Desarrollo interfaces intuitivas, dinámicas y accesibles metiante el <a href="https://tallstack.dev/" target="_blank" aria-label="Página oficial del stack TALL">stack de tecnologías TALL</a>.
+            </p>
+            <p>
+              Quiero seguir aprendiendo y mejorando en cada proyecto, construir una base sólida de mis conocimientos y optimizar la experiencia del usuario. 🚀
+            </p>
+            <div class="social-links">
+              <a href="https://github.com/rortegadev" target="_blank" rel="noopener noreferrer"
+                aria-label="Enlace al perfil de GitHub">
+                <i class="fab fa-github" aria-hidden="true"></i>
+                <span class="sr-only">GitHub</span>
+              </a>
+              <a href="https://www.linkedin.com/in/raquel-ortega-mercader/" target="_blank" rel="noopener noreferrer"
+                aria-label="Enlace al perfil de LinkedIn">
+                <i class="fab fa-linkedin" aria-hidden="true"></i>
+                <span class="sr-only">LinkedIn</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects" aria-labelledby="projects-heading">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="projects-heading">Proyectos</h2>
+          <div class="underline" aria-hidden="true"></div>
+        </div>
+        <div class="projects-grid">
+          <!-- Intranet -->
+          <article class="project-card">
+            <div class="project-image">
+              <img src="resources/img/projects/intranet.webp" alt="Captura de pantalla del proyecto de la Intranet">
+            </div>
+            <div class="project-content">
+              <h3>Intranet</h3>
+              <p>Plataforma de comunicación interna que facilita la colaboración y la gestión de recursos.</p>
+              <div class="project-tags" aria-label="Tecnologías usadas">
+                <span class="tag">Laravel</span>
+                <span class="tag">AlpineJS</span>
+                <span class="tag">Tailwind</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- La Fanalera -->
+          <article class="project-card">
+            <div class="project-image">
+              <img src="resources/img/projects/lafanalera.webp" alt="Captura de pantalla del proyecto de La Fanalera">
+            </div>
+            <div class="project-content">
+              <h3>La Fanalera</h3>
+              <p>Landing page dedicada a un espectáculo navideño donde se facilita información del mismo.</p>
+              <div class="project-tags" aria-label="Tecnologías usadas">
+                <span class="tag">React</span>
+                <span class="tag">Tailwind</span>
+              </div>
+              <div class="project-links">
+                <a href="https://lafanalera.cat/" target="_blank" rel="noopener noreferrer"
+                  aria-label="Acceder a la página web de La Fanalera">
+                  <i class="fas fa-external-link-alt" aria-hidden="true"></i> Página web
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Gamers Palma -->
+          <article class="project-card">
+            <div class="project-image">
+              <img src="resources/img/projects/gamers-palma.webp" alt="Captura de pantalla del proyecto de Gamers Palma">
+            </div>
+            <div class="project-content">
+              <h3>Gamers Palma</h3>
+              <p>
+                Página web de una tienda de videojuegos que ofrece una amplia selección de productos y servicios para
+                sus clientes.
+              </p>
+              <div class="project-tags" aria-label="Tecnologías usadas">
+                <span class="tag">Laravel</span>
+                <span class="tag">AlpineJS</span>
+                <span class="tag">Tailwind</span>
+              </div>
+              <div class="project-links">
+                <a href="https://app.gamers-palma.com/" target="_blank" rel="noopener noreferrer"
+                  aria-label="Acceder a la página web de Gamers Palma">
+                  <i class="fas fa-external-link-alt" aria-hidden="true"></i> Página web
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Sant Andreu és talent -->
+          <article class="project-card">
+            <div class="project-image">
+              <img src="resources/img/projects/artistes.webp" alt="Captura de pantalla del proyecto de 'Sant Andreu és talent'">
+            </div>
+            <div class="project-content">
+              <h3>Sant Andreu és talent</h3>
+              <p>Página web destinada a promocionar y dar visibilidad a los artistas locales.</p>
+              <div class="project-tags" aria-label="Tecnologías usadas">
+                <span class="tag">Laravel</span>
+                <span class="tag">AlpineJS</span>
+                <span class="tag">Tailwind</span>
+              </div>
+              <div class="project-links">
+                <a href="https://artistes.sabarca.cat/" target="_blank" rel="noopener noreferrer"
+                  aria-label="Acceder a la página web de 'Sant Andreu és talent'">
+                  <i class="fas fa-external-link-alt" aria-hidden="true"></i> Página web
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience" aria-labelledby="experience-heading">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="experience-heading">Experiencia</h2>
+          <div class="underline" aria-hidden="true"></div>
+        </div>
+        <div class="timeline">
+          <!-- Ajuntament - Actual -->
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <p class="timeline-date">2022 - Actualidad</p>
+              <h3 class="timeline-title">Desarrolladora Full Stack - Gestión y soporte en Administración electrónica</h3>
+              <p class="timeline-company">Ajuntament de Sant Andreu de la Barca</p>
+              <p class="timeline-subtitle">Desarrollo y mantenimiento de aplicaciones web</p>
+              <p class="timeline-description">
+                Desarrollo de aplicaciones web tanto para herramientas de gestión internas (Intranet, Agenda de entidades)
+                como para aplicaciones para la ciudadanía (<i>Espai Joventut</i>, <i>Sant Andreu és talent</i>).
+                Gestión y mantenimiento de bases de datos MySQL y desarrollo APIs REST para integraciones de servicios externos.
+              </p>
+              <p class="timeline-subtitle">Soporte en administación electrónica</p>
+              <p class="timeline-description">
+                Realizo tareas de soporte y mantenimiento de Workflow del gestor de expedientes BPM de la empresa Audifilm
+                y desarrollo de formularios electrónicos basados en su sistema Genesys. Además, me encargo de realizar documentación
+                y formación a los usuarios.
+              </p>
+            </div>
+          </div>
+
+          <!-- Gamers Palma -->
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <p class="timeline-date">2024</p> 
+              <h3 class="timeline-title">Desarrolladora frontend</h3>
+              <p class="timeline-company">Gamers Palma</p>
+              <p class="timeline-subtitle">Aplicación de fidelización para la tienda</p>
+              <p class="timeline-description">
+                Desarrollé la interfaz de la aplicación, la cual permite a los clientes acumular puntos por sus compras en tienda y canjearlos por ofertas.
+                Realicé el diseño basándome en la aplicación de compra de la tienda para asegurar la coherencia de la identidad de la misma.
+                Se trabajó con especial cuidado en el apartado responsive, dado que la aplicación se usaría casi de manera exclusiva en dispositivos móviles.
+              </p>
+            </div>
+          </div>
+
+          <!-- Ajuntament - Pràctiques -->
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <p class="timeline-date">2021 - 2022</p>
+              <h3 class="timeline-title">Prácticas como desarrolladora web</h3>
+              <p class="timeline-company">Ajuntament de Sant Andreu de la Barca</p>
+              <p class="timeline-subtitle">Desarrollo y mantenimiento de la web municipal</p>
+              <p class="timeline-description">
+                Creé y modifiqué secciones de la página web municipal, desarrollando y maquetando interfaces con HTML, CSS y Bootstrap.
+                También me encargué de realizar la sección de los trámites en PHP nativo y Laravel.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="contact-heading">¿Hablamos?</h2>
+          <div class="underline" aria-hidden="true"></div>
+        </div>
+        <div class="contact-content">
+          <!-- CTA -->
+          <div class="contact-cta">
+            <p>Si quieres contactar conmigo, estoy disponible para colaborar en proyectos y aprender conjuntamente. 🚀👩‍💻</p>
+            <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" class="linkedin-btn"
+              aria-label="Conecta conmigo en LinkedIn">
+              <i class="fab fa-linkedin" aria-hidden="true"></i>
+              Conectar en LinkedIn
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-info">
+          <h3>Raquel</h3>
+          <p>Full Stack Developer</p>
+        </div>
+        <div class="footer-copyright">
+          <p>Página hecha con HTML y CSS</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Menú para el móvil -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const navToggle = document.getElementById('nav-toggle');
+
+      navToggle.addEventListener('change', function () {
+        const expanded = this.checked ? 'true' : 'false';
+        this.setAttribute('aria-expanded', expanded);
+      });
+    });
+  </script>
+</body>
+
+</html>
